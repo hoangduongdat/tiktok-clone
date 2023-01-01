@@ -1,37 +1,37 @@
-import React from 'react';
-import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import classNames from "classnames/bind";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleXmark,
     faMagnifyingGlass,
     faSpinner,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
-import styles from './Header.module.scss';
-import images from '~/assets/images';
+import styles from "./Header.module.scss";
+import images from "~/assets/images";
 
 const cx = classNames.bind(styles);
 
 const Header = () => {
     return (
-        <header className={cx('wrapper')}>
-            <div className={cx('inner')}>
-                <div className={cx('logo')}>
+        <header className={cx("wrapper")}>
+            <div className={cx("inner")}>
+                <div className={cx("logo")}>
                     <img src={images.logo} alt="TikTok" />
                 </div>
-                <div className={cx('search')}>
+                <div className={cx("search")}>
                     <input
                         type="text"
                         placeholder="Search accounts and videos"
                         spellCheck={false}
                     />
-                    <button className={cx('clear')}>
+                    <button className={cx("clear")}>
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
-                    <button className={cx('loading')}>
+                    <button className={cx("loading")}>
                         <FontAwesomeIcon icon={faSpinner} />
                     </button>
-                    <button className={cx('search-btn')}>
+                    <button className={cx("search-btn")}>
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
                 </div>
